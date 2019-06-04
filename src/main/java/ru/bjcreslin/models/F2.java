@@ -15,6 +15,16 @@ public class F2 {
     @Column
     private String name;
 
-    @Column
+    @Override
+    public String toString() {
+        return "F2{" +
+                "code=" + code +
+                ", name='" + name + '\'' +
+                ", f1=" + f1.getName() +
+                '}';
+    }
+
+    @ManyToOne
+    @JoinColumn(name = "f1_code")
     private F1 f1;
 }

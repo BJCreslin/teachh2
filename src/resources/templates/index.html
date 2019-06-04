@@ -21,11 +21,31 @@
     <tr th:each="f1: ${f1all}">
         <td th:text="${f1.code}">1</td>
         <td th:text="${f1.name}">0.99</td>
-        <td th:text="${f1.f2Set}">0.99</td>
-        <td th:text="${f1.f3Set}">0.99</td>
+        <td th:text="${f1.f2Set}">dfd</td>
+<!--        <td th:text="${f1.getF2Set()}">0.99</td>-->
+        <!--        <td th:text="${f1.f3Set}">0.99</td>-->
     </tr>
     </tbody>
 </table>
+<h3>F2</h3>
+<table>
+    <thead>
+    <tr>
+        <th>Code</th>
+        <th>Name</th>
+        <th>F1</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="f2: ${f2all}">
+        <td th:text="${f2.code}">1</td>
+        <td th:text="${f2.name}">0.99</td>
+        <td th:text="${f2.f1}">0.99</td>
+    </tr>
+    </tbody>
+</table>
+
 
 </body>
 </html>

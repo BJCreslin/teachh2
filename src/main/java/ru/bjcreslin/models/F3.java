@@ -15,7 +15,7 @@ public class F3 {
     @Column
     private String name;
 
-    @Column
-    private F1 f1;
+//    @Column
+//    private F1 f1;
 
 }
