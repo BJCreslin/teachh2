@@ -1,8 +1,8 @@
-package service;
+package ru.bjcreslin.service;
 
-import models.F3;
+import ru.bjcreslin.models.F3;
 import org.springframework.stereotype.Service;
-import repo.F3Repo;
+import ru.bjcreslin.repo.F3Repo;
 
 import java.util.List;
 

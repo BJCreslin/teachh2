@@ -1,6 +1,6 @@
-package repo;
+package ru.bjcreslin.repo;
 
-import models.F1;
+import ru.bjcreslin.models.F1;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

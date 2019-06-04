@@ -1,6 +1,6 @@
-package service;
+package ru.bjcreslin.service;
 
-import models.F2;
+import ru.bjcreslin.models.F2;
 
 import java.util.List;
 

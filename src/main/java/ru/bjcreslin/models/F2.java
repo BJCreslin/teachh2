@@ -1,4 +1,4 @@
-package models;
+package ru.bjcreslin.models;
 
 import lombok.Data;
 

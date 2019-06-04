@@ -1,11 +1,12 @@
-package controllers;
+package ru.bjcreslin.controllers;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import service.*;
+import ru.bjcreslin.service.F1ServiceImpl;
+import ru.bjcreslin.service.F2Service;
+import ru.bjcreslin.service.F3Service;
 
 @Controller
 @RequestMapping("/index")
