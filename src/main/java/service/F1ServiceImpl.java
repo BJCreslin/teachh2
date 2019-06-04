@@ -8,7 +8,7 @@ import java.util.List;
 
 @Service
 public class F1ServiceImpl implements F1Service {
-    F1Repo repo;
+    private F1Repo repo;
 
     public F1ServiceImpl(F1Repo repo) {
         this.repo = repo;
