@@ -2,10 +2,7 @@ package ru.bjcreslin.models;
 
 import lombok.Data;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -14,6 +11,7 @@ import java.util.Set;
 @Data
 public class F1 {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long code;
 
     @Column
