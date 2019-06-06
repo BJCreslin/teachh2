@@ -1,11 +1,13 @@
 package ru.bjcreslin.service;
 
+import org.springframework.transaction.annotation.Transactional;
 import ru.bjcreslin.models.F2;
 import org.springframework.stereotype.Service;
 import ru.bjcreslin.repo.F2Repo;
 
 import java.util.List;
 
+@Transactional
 @Service
 public class F2ServiceImpl implements F2Service {
     private F2Repo repo;

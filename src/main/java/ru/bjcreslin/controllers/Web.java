@@ -7,8 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import ru.bjcreslin.models.F1;
 import ru.bjcreslin.models.F2;
 import ru.bjcreslin.models.F3;
-import ru.bjcreslin.service.*;
-import sun.text.normalizer.NormalizerBase;
+import ru.bjcreslin.service.F1ServiceImpl;
+import ru.bjcreslin.service.F2ServiceImpl;
+import ru.bjcreslin.service.F3ServiceImpl;
 
 @Controller
 @RequestMapping("/index")
@@ -37,7 +38,7 @@ public class Web {
     @GetMapping("/delete1F1")
 
     public String delete1F1(Model model) {
-        //  f1Service.deleteByCode(1L);
+          f1Service.deleteByCode(1L);
 
         return "redirect:/index";
     }

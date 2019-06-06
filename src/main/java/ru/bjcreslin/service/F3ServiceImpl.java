@@ -1,11 +1,13 @@
 package ru.bjcreslin.service;
 
+import org.springframework.transaction.annotation.Transactional;
 import ru.bjcreslin.models.F3;
 import org.springframework.stereotype.Service;
 import ru.bjcreslin.repo.F3Repo;
 
 import java.util.List;
 
+@Transactional
 @Service
 public class F3ServiceImpl implements F3Service {
     private F3Repo repo;
