@@ -13,4 +13,6 @@ public interface F1Service {
     void save(F1 f1);
 
     void saveAll(Iterable<F1> iterable);
+
+    void deleteByCode(Long code);
 }

@@ -15,4 +15,6 @@ public interface F1Repo extends JpaRepository<F1, Long> {
     F1 save(F1 f1);
 
     <S extends F1> List<S> saveAll(Iterable<S> iterable);
+
+    void deleteByCode(Long code);
 }

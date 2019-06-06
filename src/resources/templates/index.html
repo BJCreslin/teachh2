@@ -21,8 +21,8 @@
     <tr th:each="f1: ${f1all}">
         <td th:text="${f1.code}">1</td>
         <td th:text="${f1.name}">0.99</td>
-        <td th:text="${f1.f2Set}">dfd</td>
-<!--        <td th:text="${f1.getF2Set()}">0.99</td>-->
+        <!--        <td th:text="${f1.f2set}">dfd</td>-->
+        <td th:text="${f1.getF2Set()}">0.99</td>
         <!--        <td th:text="${f1.f3Set}">0.99</td>-->
     </tr>
     </tbody>
@@ -45,6 +45,13 @@
     </tr>
     </tbody>
 </table>
+
+<form th:action="@{/index/delete1F1}" method="get">
+    <button type="submit"> delete 1st F1</button>
+</form>
+<form th:action="@{/index/fill}" method="get">
+    <button type="submit"> fill</button>
+</form>
 
 
 </body>

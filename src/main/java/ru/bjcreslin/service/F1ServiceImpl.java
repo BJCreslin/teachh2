@@ -30,4 +30,8 @@ public class F1ServiceImpl implements F1Service {
     public void saveAll(Iterable<F1> iterable) {
         repo.saveAll(iterable);
     }
+
+    public void deleteByCode(Long code) {
+        repo.deleteByCode(code);
+    }
 }
